@@ -1,0 +1,46 @@
+---
+alwaysApply: true
+---
+
+# Loopay Development Rules
+
+- Always use **TypeScript** instead of JavaScript.
+- Use **Expo + React Native** for mobile development.
+- Navigation must use **Expo Router**, not React Navigation stack unless absolutely necessary.
+- Use **NativeWind (Tailwind for React Native)** for styling. No inline styles.
+- Keep project structure clean:
+  - /app → screens and routes
+  - /components → reusable UI elements
+  - /services → API calls and data logic
+  - /lib → utilities/helpers
+  - /types → shared TypeScript types/interfaces
+- All API calls should use **axios** inside /services.
+- Never hardcode strings like API keys. Use **.env** with `react-native-dotenv`.
+- Components should be modular: <200 lines max per file.
+- Always add type annotations for props, API responses, and state.
+- Prefer **functional components** with hooks, not class components.
+- Follow **clean commit messages**: `feat:`, `fix:`, `refactor:`, `chore:`, `docs:`.
+- Use **async/await**, not `.then()`.
+- All UI must be responsive and mobile-first.
+- Write code so that it’s easy to scale (think SaaS → web dashboard later).
+# Loopay Development Rules
+
+- Always use **TypeScript** instead of JavaScript.
+- Use **Expo + React Native** for mobile development.
+- Navigation must use **Expo Router**, not React Navigation stack unless absolutely necessary.
+- Use **NativeWind (Tailwind for React Native)** for styling. No inline styles.
+- Keep project structure clean:
+  - /app → screens and routes
+  - /components → reusable UI elements
+  - /services → API calls and data logic
+  - /lib → utilities/helpers
+  - /types → shared TypeScript types/interfaces
+- All API calls should use **axios** inside /services.
+- Never hardcode strings like API keys. Use **.env** with `react-native-dotenv`.
+- Components should be modular: <200 lines max per file.
+- Always add type annotations for props, API responses, and state.
+- Prefer **functional components** with hooks, not class components.
+- Follow **clean commit messages**: `feat:`, `fix:`, `refactor:`, `chore:`, `docs:`.
+- Use **async/await**, not `.then()`.
+- All UI must be responsive and mobile-first.
+- Write code so that it’s easy to scale (think SaaS → web dashboard later).

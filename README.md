@@ -25,6 +25,62 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
+## Development Tools
+
+This project includes a comprehensive engineering setup for code quality and consistency:
+
+### Code Quality Scripts
+
+- **`npm run lint`** - Check code for linting errors and style issues
+- **`npm run lint:fix`** - Automatically fix auto-fixable linting issues
+- **`npm run format`** - Format all code files using Prettier
+- **`npm run format:check`** - Check if all files are properly formatted
+- **`npm run typecheck`** - Run TypeScript compiler check without emitting files
+
+### Configuration Files
+
+- **`.eslintrc.js`** - ESLint configuration with TypeScript and React Native rules
+- **`.prettierrc`** - Prettier formatting rules
+- **`.prettierignore`** - Files to exclude from Prettier formatting
+- **`.editorconfig`** - Editor configuration for consistent coding style
+- **`tsconfig.json`** - TypeScript configuration with strict mode enabled
+- **`tailwind.config.js`** - Tailwind CSS configuration for NativeWind
+- **`babel.config.js`** - Babel configuration with NativeWind plugin
+- **`global.css`** - Tailwind CSS base styles
+
+### Code Quality Rules
+
+- **TypeScript**: Strict mode enabled with `isolatedModules: true`
+- **ESLint**: React Native specific rules, TypeScript support, and Prettier integration
+- **Prettier**: Consistent code formatting across the project
+- **EditorConfig**: Consistent indentation and line endings
+
+### Tech Stack
+
+- **Expo Router**: File-based routing for React Native
+- **NativeWind**: Tailwind CSS for React Native
+- **TypeScript**: Full type safety throughout the application
+- **React Native**: Cross-platform mobile development
+
+### Project Structure
+
+- **`/app`** - Expo Router screens and navigation
+  - **`/(tabs)`** - Tab-based navigation (Home, Add, Analytics, Settings)
+  - **`_layout.tsx`** - Root layout configuration
+- **`/components/ui`** - Reusable UI components
+  - **`Text.tsx`** - Themed text component with variants
+  - **`Button.tsx`** - Themed button component with variants
+- **`/global.css`** - Tailwind CSS base styles for NativeWind
+
+### Best Practices
+
+- All components use TypeScript with proper type annotations
+- React Native specific linting rules prevent common issues
+- Consistent code formatting ensures readability
+- Strict TypeScript configuration catches potential errors early
+- NativeWind classes for styling (no inline styles)
+- Dark/light theme support with CSS classes
+
 ## Get a fresh project
 
 When you're ready, run:
